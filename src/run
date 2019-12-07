@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+from msapp.api import HttpServer
+
+def main():
+    server = HttpServer()
+    server.blockingRunner()
+
+if __name__ == "__main__":
+    main()
