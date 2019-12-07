@@ -16,7 +16,7 @@ The expected result is:
 
 Before downloading and starting the application, make sure your python3 environment is already installed and ready to use.
 
-First download the 'recipelist' application from GitHub.
+=== First download the 'recipelist' application from GitHub.
 
 [source,bash]
 ----
@@ -31,4 +31,29 @@ cd recipelist/app
 ./run
 ----
 
-When the server is running...
+When the server is running, open the browser and load the website `http://localhost:8001/`.
+
+The browser should display 'Hello World!'.
+
+===  Next step, serving recipe content.
+
+Edit the file `app/msapp/domain/service/recipeService.py` and implement the `serve` function.
+
+[source,python]
+----
+class RecipeService:
+    '''
+      RecipeService.serve is called by the HTTP server, when a new browser request comes in.
+
+      Serve the browser with some recipe content.
+
+      Parameters:
+        request (str): The path of the requested URL (e.g. '/' or '/recipelist').
+
+      Returns:
+        str: The content (text or html), that is replied to the browser.
+    '''
+    def serve(self, request: str) -> str:
+        # ADD YOUR CODE HERE!!!
+        pass
+----
