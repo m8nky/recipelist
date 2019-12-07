@@ -1,0 +1,34 @@
+= Recipe server in Python3
+
+This little service is supposed to help learn coding in Python3. The idea is to serve cooking recipes to a web consumer.
+
+
+== Goal
+
+The expected result is:
+
+* Implement a recipe service in Python3, based on the template in this repository.
+* Start the application.
+* Open browser, hit in the service URL (see below), and see the recipes at the webpage.
+
+
+== Starting hints
+
+Before downloading and starting the application, make sure your python3 environment is already installed and ready to use.
+
+First download the 'recipelist' application from GitHub.
+
+[source,bash]
+----
+git clone https://github.com/m8nky/recipelist.git
+----
+
+And try to run it the first time.
+
+[source,bash]
+----
+cd recipelist/app
+./run
+----
+
+When the server is running...
